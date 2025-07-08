@@ -2,9 +2,6 @@ import streamlit as st
 import os
 import numpy as np
 from PIL import Image
-
-import joblib
-
 # Config
 DATA_DIR = r"C:\Users\LENOVO\Downloads\Rice Classification"
 IMG_SIZE = (64, 64)
