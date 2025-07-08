@@ -5,16 +5,10 @@ from PIL import Image
 # Config
 DATA_DIR = r"C:\Users\LENOVO\Downloads\Rice Classification"
 IMG_SIZE = (64, 64)
-
 st.title("🍚 Rice Classification (No TensorFlow)")
-
 @st.cache_resource
 def load_data_and_train():
     X, y = [], []
-       
-   
-# st.success(f"✅ Model trained with accuracy: {acc*100:.2f}%")
-
 # Upload image
 img_file = st.file_uploader("Upload rice image", type=["jpg", "jpeg", "png"])
 if img_file:
