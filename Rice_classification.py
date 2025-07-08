@@ -21,4 +21,4 @@ if img_file:
 
     st.image(img, caption="Uploaded Image")
     st.write(f"🔍 Predicted: **{label_encoder.inverse_transform([pred])[0]}**")
-    st.write(f"📊 Confidence: **{prob*100:.2f}%**")
+
