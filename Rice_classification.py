@@ -4,7 +4,7 @@ import os
 import numpy as np
 from PIL import Image
 
-from sklearn.model_selection import train_test_split
+
 from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import accuracy_score
 import joblib
