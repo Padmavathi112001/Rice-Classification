@@ -11,13 +11,7 @@ st.title("🍚 Rice Classification (No TensorFlow)")
 @st.cache_resource
 def load_data_and_train():
     X, y = [], []
-            img_path = os.path.join(folder, file)
-            img = cv2.imread(img_path)
-            img = cv2.resize(img, IMG_SIZE)
-            gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-            hist = cv2.calcHist([gray], [0], None, [256], [0, 256]).flatten()
-            X.append(hist)
-            y.append(label)
+       
     
     le = LabelEncoder()
     y_enc = le.fit_transform(y)
