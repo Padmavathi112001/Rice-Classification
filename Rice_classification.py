@@ -12,16 +12,7 @@ st.title("🍚 Rice Classification (No TensorFlow)")
 def load_data_and_train():
     X, y = [], []
        
-    
-    le = LabelEncoder()
-    y_enc = le.fit_transform(y)
-    X_train, X_test, y_train, y_test = train_test_split(X, y_enc, test_size=0.2, random_state=42)
-    model = SVC(kernel='linear', probability=True)
-    model.fit(X_train, y_train)
-    acc = accuracy_score(y_test, model.predict(X_test))
-    return model, le, acc
-
-model, label_encoder, acc = load_data_and_train()
+   
 # st.success(f"✅ Model trained with accuracy: {acc*100:.2f}%")
 
 # Upload image
