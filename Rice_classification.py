@@ -20,5 +20,4 @@ if img_file:
     prob = model.predict_proba(hist)[0][pred]
 
     st.image(img, caption="Uploaded Image")
-    st.write(f"🔍 Predicted: **{label_encoder.inverse_transform([pred])[0]}**")
-
+ 
