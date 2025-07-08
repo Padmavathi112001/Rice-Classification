@@ -11,7 +11,6 @@ st.title("🍚 Rice Classification (No TensorFlow)")
 @st.cache_resource
 def load_data_and_train():
     X, y = [], []
-    for label in os.listdir(DATA_DIR):
         folder = os.path.join(DATA_DIR, label)
         for file in os.listdir(folder):
             img_path = os.path.join(folder, file)
@@ -31,7 +30,7 @@ def load_data_and_train():
     return model, le, acc
 
 model, label_encoder, acc = load_data_and_train()
-st.success(f"✅ Model trained with accuracy: {acc*100:.2f}%")
+# st.success(f"✅ Model trained with accuracy: {acc*100:.2f}%")
 
 # Upload image
 img_file = st.file_uploader("Upload rice image", type=["jpg", "jpeg", "png"])
