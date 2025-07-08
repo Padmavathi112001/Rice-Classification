@@ -2,7 +2,7 @@ import streamlit as st
 import os
 import numpy as np
 from PIL import Image
-from sklearn.metrics import accuracy_score
+
 import joblib
 
 # Config
