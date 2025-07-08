@@ -11,7 +11,6 @@ st.title("🍚 Rice Classification (No TensorFlow)")
 @st.cache_resource
 def load_data_and_train():
     X, y = [], []
-        for file in os.listdir(folder):
             img_path = os.path.join(folder, file)
             img = cv2.imread(img_path)
             img = cv2.resize(img, IMG_SIZE)
